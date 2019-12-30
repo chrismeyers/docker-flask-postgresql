@@ -1,0 +1,3 @@
+[submodule "bin/docker-postgresql-multiple-databases"]
+	path = bin/docker-postgresql-multiple-databases
+	url = https://github.com/chrismeyers/docker-postgresql-multiple-databases.git
