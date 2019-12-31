@@ -1,7 +1,7 @@
 import click
 from sqlalchemy.exc import SQLAlchemyError
 from app import db
-from app.models import User
+from app.models import Users
 
 
 def register(app):
@@ -21,7 +21,7 @@ def register(app):
     def user():
         '''Creates a test user'''
         print('Creating test user...')
-        u = User(username='test', email='test@test.com')
+        u = Users(username='test', email='test@test.com')
 
         try:
             db.session.add(u)

@@ -18,3 +18,9 @@ $ docker exec -it <web_container_name> bash
 
 ### Verify
 The `0.0.0.0:5000/api` endpoint should now be available
+
+### Tests
+```
+$ docker exec -it <web_container_name> bash
+> python -m pytest
+```

@@ -1,6 +1,6 @@
 from flask import jsonify
 from app.api import bp
-from app.models import User
+from app.models import Users
 
 
 @bp.route('/')
@@ -14,5 +14,5 @@ def greet():
             200:
                 description: A greeting to someone
     '''
-    user = User.query.first() or User(username='world')
+    user = Users.query.first() or Users(username='world')
     return jsonify({'message': f'Hello, {user.username}!'})
