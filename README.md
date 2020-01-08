@@ -1,5 +1,5 @@
 # docker-flask-postgresql
-Flask and PostgreSQL application, dockerized
+Flask and PostgreSQL application, dockerized. The general architecture of this template is based on https://github.com/miguelgrinberg/microblog.
 
 ### Setup
 1. If needed, [install docker](https://docs.docker.com/install/) on your computer
