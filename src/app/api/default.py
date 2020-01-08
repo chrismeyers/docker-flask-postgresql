@@ -16,3 +16,17 @@ def greet():
     '''
     user = Users.query.first() or Users(username='world')
     return jsonify({'message': f'Hello, {user.username}!'})
+
+
+@bp.route('/ping')
+def ping():
+    ''' Ping endpoint
+    ---
+    get:
+        summary: API availability endpoint
+        description: Checks if the API is running
+        responses:
+            200:
+                description: Responds pong to the ping request
+    '''
+    return jsonify({'message': 'pong'})
